@@ -1,0 +1,34 @@
+section {
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+}
+article {
+    flex-grow: 1;
+    min-width: 25vw;
+    color: #666;
+    background-color:#bedddd;
+    box-shadow: 5px 5px 10px;
+    padding: 1em;
+    margin: 1em;
+}
+section h1 {
+    padding: 1em;
+    width: calc(100% - 2em);
+    border-top: 2px solid #027473;
+    border-bottom: 2px solid #027473;
+}
+main h2 {
+    padding: 1em;
+}
+
+@media screen and (max-width: 1024px) {
+    main h2, section h1 {
+        text-align: center;
+    }
+    section {
+        flex-direction: column;
+        width: 100vw;
+        flex-wrap: wrap;
+    }
+}
